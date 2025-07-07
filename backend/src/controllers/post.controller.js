@@ -59,7 +59,7 @@ export const createPost = asyncHandler(async (req, res) => {
     return res.status(400).json({ message: "Image or content are required" });
 
   //upload image to cloudinary
-  const user = await User.findById({ clerkId: userId });
+  const user = await User.findOne({ clerkId: userId });
   if (!user) return res.status(404).json({ message: "User not found" });
   let imageUrl = "";
   if (imageFile) {
