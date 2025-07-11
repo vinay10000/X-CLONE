@@ -22,14 +22,14 @@ const TabsLayout = () => {
   return (
     <Tabs screenOptions={{
       headerShown : false,
-      tabBarActiveTintColor : "#040404",
-      tabBarInactiveTintColor : "#93D676",
+      tabBarActiveTintColor : "#93D676",
+      tabBarInactiveTintColor : "#fff",
       tabBarButton: CustomTabButton, // Use custom button
       tabBarStyle : {
-        backgroundColor : "#fff",
+        backgroundColor : "#000",
         borderTopColor : "#93D676",
-        borderTopWidth : 1,
-        paddingTop : 8,
+        borderTopWidth : 2,
+        paddingTop : 10,
         paddingBottom : 10,
         height : 55+insets.bottom,
       }
